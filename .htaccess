@@ -1,0 +1,14 @@
+#RewriteEngine on
+#RewriteBase /droidteam.com/
+#RewriteCond $1 !^(index\.php|resources|robots\.txt)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ public_html/index.php/$1 [L,QSA]
+
+RewriteEngine on
+RewriteBase /FlyStat
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
