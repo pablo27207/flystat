@@ -37,19 +37,5 @@ class Avion extends  DataMapper {
 			)
 	);
 	
-	public function buscarDisertantes($valorBusqueda = null){
-	
-		$u = new Disertante();
-		if($valorBusqueda !=null){
-			$u->like('id',$valorBusqueda);
-			$u->or_like('nombre',$valorBusqueda);
-			$u->or_like('telefono',$valorBusqueda);
-			$u->or_like('email',$valorBusqueda)->get();
-		}
-		else{
-			$u->get();
-		}
-		return $u;
-	
-	}
+
 }
