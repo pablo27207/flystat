@@ -37,5 +37,9 @@ class Avion extends  DataMapper {
 			)
 	);
 	
+	function get_open_templates()
+	{
+		return $this->where('status <>', 'closed')->get();
+	}
 
 }
