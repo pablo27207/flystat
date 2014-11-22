@@ -108,15 +108,23 @@
 <script type="text/javascript" src="assets/js/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="assets/js/plugins/parallax-slider/modernizr.js"></script>
 <script type="text/javascript" src="assets/js/plugins/parallax-slider/jquery.cslider.js"></script>
+
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="assets/js/plugins/revolution-slider/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/revolution-slider/jquery.themepunch.revolution.min.js"></script>
 <!-- JS Page Level -->           
 <script type="text/javascript" src="assets/js/app.js"></script>
 <script type="text/javascript" src="assets/js/pages/index.js"></script>
+
+
+
 <script type="text/javascript">
-    jQuery(document).ready(function() {
-      	App.init();
-        App.initSliders();
-        Index.initParallaxSlider();        
-    });
+jQuery(document).ready(function() {
+    App.init();
+    Index.initRevolutionSlider();
+ 
+});
 </script>
 <!--[if lt IE 9]>
     <script src="assets/plugins/respond.js"></script>
