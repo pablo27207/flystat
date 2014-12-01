@@ -39,13 +39,19 @@ function register()
 
         if ($u->login())
         {
-            echo '<p>Bienvenido ' . $u->nombre .' '.$u->apellido . '!</p>';
-            echo '<p>You have successfully logged in so now we know that your email is ' . $u->email . '.</p>';
+        	$this->session->set_userdata('email',$u->email);
+        	$this->session->set_userdata('nombre',$u->nombre);
+        	$this->session->set_userdata('apellido',$u->apellido);
+        	$this->session->set_userdata('logeado',TRUE);
+        	redirect('home','refresh');
+        	
         }
         else
         {
-            // Show the custom login error message
-            echo '<p>' . $u->error->login . '</p>';
+        	$this->session->set_userdata('logeado',FALSE);
+           	$this->data_page['msg_error']= $u->error->login;
+            
+           	$this->load->view('login_view',$this->data_page);
         }
     }
 	public function logout(){

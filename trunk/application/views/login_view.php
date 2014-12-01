@@ -54,6 +54,9 @@
             <span class="input-group-addon"><i class="fa fa-lock"></i></span>
             <input type="text" class="form-control" id="password"  name="password" placeholder="Contrase&ntilde;a">
         </div>
+        <?php if(!empty($msg_error)){?>
+				     <div class="alert alert-danger" role="alert"><?php echo $msg_error;?></div>	
+	<?php }?>
         <hr>
               
         <div class="row">
@@ -61,10 +64,7 @@
                 <button type="submit" class="btn-u btn-block">Entrar</button>
             </div>
         </div>
-        	<?php echo form_close();?>
-        	<?php echo form_open("login/register",array('class'=>'form-signin'));?>
-        	 <button type="submit" class="btn-u btn-block">registrar</button>
-        	 <?php echo form_close();?>
+       
     </div>
     <!--End Reg Block-->
 </div><!--/container-->
