@@ -4,7 +4,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['view']       = 'home';
+		$data['view']       = 'home_view';
 		$data['data_view']  = array();
 		$data['css']        = array();
 		$data['js']         = array();
