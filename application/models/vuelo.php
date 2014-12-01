@@ -4,7 +4,7 @@ class Vuelo extends DataMapper {
 	
 	public $table ="vuelo";
 	public $has_one = array("avion");
-	public $has_many = array("pasajeros");
+	public $has_many = array("pasajero");
 	
 	function __construct($id = NULL)
 	{

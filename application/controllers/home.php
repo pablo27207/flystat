@@ -7,7 +7,7 @@ class Home extends CI_Controller {
 		$data['view']       = 'home_view';
 		$data['data_view']  = array();
 		$data['css']        = array();
-		$data['js']         = array('homeFunctions');
+		$data['js']         = array();
 		
 		if($this->session->userdata('logeado')){
 		$this->load->view('template',$data);}

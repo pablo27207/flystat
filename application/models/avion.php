@@ -3,7 +3,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Avion extends  DataMapper {
 	
 	public $table ="avion";
-	public $has_many = array("vuelos");
+	public $has_many = array("vuelo");
 	
 	function __construct($id = NULL)
 	{
@@ -36,10 +36,5 @@ class Avion extends  DataMapper {
 					'rules' => array('valid_date')
 			)
 	);
-	
-	function get_open_templates()
-	{
-		return $this->where('status <>', 'closed')->get();
-	}
 
 }

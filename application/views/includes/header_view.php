@@ -61,7 +61,7 @@
                         <span class="fa fa-bars"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img id="logo-header" src="assets/img/logo1-default.png" alt="Logo">
+                        <img id="logo-header" src="<?php echo base_url();?>assets/img/logo1-default.png" alt="Logo">
                     </a>
                 </div>
 
@@ -126,7 +126,7 @@
                 <!-- SLIDE -->
                 <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/img/sliders/1.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <img src="<?php echo base_url();?>assets/img/sliders/1.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption revolution-ch1 sft start"
                         data-x="center"
@@ -177,7 +177,7 @@
                 <!-- SLIDE -->
                 <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/img/sliders/2.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <img src="<?php echo base_url();?>assets/img/sliders/2.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption revolution-ch1 sft start"
                         data-x="center"
@@ -228,7 +228,7 @@
                 <!-- SLIDE -->
                 <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/img/sliders/3.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <img src="<?php echo base_url();?>assets/img/sliders/3.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption revolution-ch1 sft start"
                         data-x="center"

@@ -52,7 +52,7 @@
         </div>
         <div class="input-group margin-bottom-20">
             <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-            <input type="text" class="form-control" id="password"  name="password" placeholder="Contrase&ntilde;a">
+            <input type="password" class="form-control" id="password"  name="password" placeholder="Contrase&ntilde;a">
         </div>
         <?php if(!empty($msg_error)){?>
 				     <div class="alert alert-danger" role="alert"><?php echo $msg_error;?></div>	
