@@ -40,7 +40,7 @@
             </div>
         </div>    
     <!--Basic Table-->
-  
+  <div class="search-block-v2">
                 <table id="tablaVuelo" name="tablaVuelo" class="table">
                     
                 </table>
@@ -49,9 +49,11 @@
                  <div id="mensaje" name="mensaje"  class="col-md-6 col-md-offset-3">
                     
                 </table
-    
+    </div>
     </div><!--/container--> 
-   
+    </div>
+    <br></br>
+   <br></br>
    
 </section>            
 </aside>
@@ -80,6 +82,7 @@
   	                              "<th>Fecha partida</th>"+
   	                              "<th >Origen</th>"+
   	                              "<th>Destino</th>"+
+  	                            "<th>Detalle</th>"+
   	                          "</tr>"+
   	                      "</thead>"+
   	                      "<tbody>";
@@ -91,7 +94,10 @@
 	  	                              "<td>"+$item[0]+"</td>"+
 	  	                              "<td>"+$item[1]+"</td>"+
 	  	                              "<td>"+$item[2]+"</td>"+
-	  	                              "<td>"+$item[3]+"</td>"+                     
+	  	                              "<td>"+$item[3]+"</td>"+  
+	  	                            "<td><a href=\"<?php echo base_url(); ?>detalleVuelo/abrir/"+$item[0]+"\" >"+
+	                                    "<i class=\"fa fa-info-circle\"></i></td>"+
+	  	                          //    "<td><button class=\"btn-u\" type=\"button\">Ver</button></td>"+                     
 	  	                          "</tr>";
 					  	  			   });
 
@@ -100,13 +106,13 @@
 				            		$("#tablaVuelo").html(htmlAgregar2);
 				            		
 				            		}else{
-				            			$("#mensaje").html("<div class=\"alert alert-danger\" role=\"alert\">Error en la busqueda, intente nuevamente. </div>");
+				            			$("#mensaje").html("<div class=\"alert alert-danger\" role=\"alert\"> No hay resultados.</div>");
 						  	  			
 				            			}
 			            		 },
 				  	  			
 				  	  			error:  function (response) {
-				  	  			$("#mensaje").html("<div class=\"alert alert-danger\" role=\"alert\">No hay resultados. </div>");
+				  	  			$("#mensaje").html("<div class=\"alert alert-danger\" role=\"alert\">Error en la busqueda, intente nuevamente. </div>");
 				  	  			 }
 	  			   
   			   		});
