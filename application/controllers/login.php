@@ -56,8 +56,7 @@ function register()
     }
 	public function logout(){
 
-		$u = new Usuario();
-		$u->logout();
+		$this->session->sess_destroy();
 		$this->load->view('login_view');
 	}
 }

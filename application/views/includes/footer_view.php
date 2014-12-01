@@ -100,8 +100,7 @@
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->			
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-migrate-1.2.1.min.js"></script>
+
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/back-to-top.js"></script>
@@ -116,7 +115,6 @@
 <!-- JS Page Level -->           
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/app.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/pages/index.js"></script>
-
 
 
 <script type="text/javascript">
@@ -141,6 +139,11 @@ jQuery(document).ready(function() {
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+
+
+
+  
 </script>
 </body>
 </html>	

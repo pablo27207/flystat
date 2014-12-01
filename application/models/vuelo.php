@@ -1,6 +1,6 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Avion extends DataMapper {
+class Vuelo extends DataMapper {
 	
 	public $table ="vuelo";
 	public $has_one = array("avion");
