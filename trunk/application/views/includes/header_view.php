@@ -16,15 +16,15 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/css/plugins/font-awesome/font-awesome.min.css"> 
-     <link rel="stylesheet" href="assets/css/plugins/revolution-slider/settings.css"> 
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins/font-awesome/font-awesome.min.css"> 
+     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins/revolution-slider/settings.css"> 
         <!-- CSS Theme -->    
-    <link rel="stylesheet" href="assets/css/themes/default.css" id="style_color">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/themes/default.css" id="style_color">
 
    
 </head>	
