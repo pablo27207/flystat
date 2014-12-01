@@ -16,18 +16,18 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/css/plugins/font-awesome/font-awesome.min.css"> 
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins/font-awesome/font-awesome.min.css"> 
   
     <!-- CSS Page Style -->    
-    <link rel="stylesheet" href="assets/css/page_log.css">   
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/page_log.css">   
 
     <!-- CSS Theme -->    
-    <link rel="stylesheet" href="assets/css/themes/default.css" id="style_color">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/themes/default.css" id="style_color">
     
 
     
@@ -71,23 +71,23 @@
 <!--=== End Content Part ===-->
 
 <!-- JS Global Compulsory -->           
-<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->           
-<script type="text/javascript" src="assets/js/plugins/countdown/jquery.countdown.js"></script>
-<script type="text/javascript" src="assets/js/plugins/backstretch/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/countdown/jquery.countdown.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/backstretch/jquery.backstretch.min.js"></script>
 <script type="text/javascript">
     $.backstretch([
-      "assets/img/bg/5.jpg",
-      "assets/img/bg/4.jpg",
+      "<?php echo base_url();?>assets/img/bg/5.jpg",
+      "<?php echo base_url();?>assets/img/bg/4.jpg",
       ], {
         fade: 1000,
         duration: 7000
     });
 </script>
 <!-- JS Page Level -->           
-<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/app.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
