@@ -65,7 +65,5 @@ class Usuario extends DataMapper {
             $this->{$field} = sha1($this->salt . $this->{$field});
         }
     }
-	function logout(){
-		$this->session->sess_destroy();
-	}
+	
 }
